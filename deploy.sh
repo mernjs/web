@@ -1,20 +1,22 @@
 #!/bin/bash
-set -e
 
-echo "🚀 Starting deployment..."
+set -e   # stop on error
 
-cd /var/www/web
+echo "📁 App directory"
+pwd
 
-echo "📦 Pulling latest code..."
+echo "📦 Pulling code"
 git pull origin main
 
-echo "📦 Installing dependencies..."
+echo "📦 Installing dependencies"
 npm install
 
-echo "🏗️ Building Next.js app..."
+echo "🏗️ Building app"
 npm run build
 
-echo "♻️ Restarting PM2 app..."
+echo "🚀 Restarting PM2"
 pm2 restart nextjs-app || pm2 start npm --name nextjs-app -- start
 
-echo "✅ Deployment finished successfully!"
+pm2 save
+
+echo "✅ Deployment successful"
