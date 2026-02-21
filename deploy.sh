@@ -5,7 +5,6 @@ echo "🚀 Starting deployment..."
 echo "Shell: $SHELL"
 echo "User: $(whoami)"
 
-# ---- HARD LOAD NVM (NO DEPENDENCY ON SHELL) ----
 export NVM_DIR="$HOME/.nvm"
 
 if [ ! -s "$NVM_DIR/nvm.sh" ]; then
