@@ -1,14 +1,14 @@
-
 #!/bin/bash
 set -e
 
 echo "🚀 Starting deployment..."
 
-# Load nvm (VERY IMPORTANT)
+# 🔥 Load NVM (THIS IS THE FIX)
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
-echo "📦 Node version:"
+echo "🧠 Node location:"
+which node
 node -v
 npm -v
 
@@ -28,4 +28,4 @@ pm2 restart nextjs-app || pm2 start npm --name nextjs-app -- start
 
 pm2 save
 
-echo "✅ Deployment successful"
+echo "✅ Deployment successful 🎉"
