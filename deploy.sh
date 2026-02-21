@@ -1,20 +1,29 @@
+
 #!/bin/bash
+set -e
 
-set -e   # stop on error
+echo "🚀 Starting deployment..."
 
-echo "📁 App directory"
-pwd
+# Load nvm (VERY IMPORTANT)
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
-echo "📦 Pulling code"
+echo "📦 Node version:"
+node -v
+npm -v
+
+cd /var/www/web
+
+echo "📦 Pulling latest code..."
 git pull origin main
 
-echo "📦 Installing dependencies"
+echo "📦 Installing dependencies..."
 npm install
 
-echo "🏗️ Building app"
+echo "🏗️ Building app..."
 npm run build
 
-echo "🚀 Restarting PM2"
+echo "🔄 Restarting PM2..."
 pm2 restart nextjs-app || pm2 start npm --name nextjs-app -- start
 
 pm2 save
