@@ -22,7 +22,7 @@ export default function Hero() {
           We Build{' '}
           <span className="gradient-text">Digital Products</span>
           {' '}That<br className="hidden md:block" />
-          Drive Real Business Growth
+          Drive Real Business Growth.
         </h1>
 
         <p className="text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed" style={{ color: 'var(--muted)' }}>
