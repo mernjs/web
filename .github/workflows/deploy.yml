@@ -1,4 +1,4 @@
-name: Deploy Next.js to EC2
+name: Deploy to EC2
 
 on:
   push:
@@ -13,13 +13,28 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      # 🔐 Setup SSH (FIXED)
       - name: Setup SSH
         run: |
           mkdir -p ~/.ssh
           echo "${{ secrets.EC2_SSH_KEY }}" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
+
+          # Force SSH to use this key
+          cat <<EOF > ~/.ssh/config
+          Host *
+            IdentityFile ~/.ssh/id_ed25519
+            StrictHostKeyChecking no
+          EOF
+
+          chmod 600 ~/.ssh/config
           ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
 
+      # 🚀 Deploy
       - name: Deploy to EC2
         run: |
-          ssh ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} "cd /var/www/web && ./deploy.sh"
+          ssh ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'EOF'
+            cd /var/www/web
+            chmod +x deploy.sh
+            ./deploy.sh
+          EOF
