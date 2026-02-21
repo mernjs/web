@@ -1,13 +1,21 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -e
 
 echo "🚀 Starting deployment..."
 
-# 🔥 Load NVM (THIS IS THE FIX)
+# ---- FORCE NVM LOAD (PERMANENT FIX) ----
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+if [ -s "$NVM_DIR/nvm.sh" ]; then
+  . "$NVM_DIR/nvm.sh"
+else
+  echo "❌ NVM not found"
+  exit 1
+fi
 
-echo "🧠 Node location:"
+# Lock node version
+nvm use 24
+
+echo "🧠 Node info:"
 which node
 node -v
 npm -v
@@ -28,4 +36,4 @@ pm2 restart nextjs-app || pm2 start npm --name nextjs-app -- start
 
 pm2 save
 
-echo "✅ Deployment successful 🎉"
+echo "✅ Deployment successful"
