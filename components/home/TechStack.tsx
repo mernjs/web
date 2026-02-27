@@ -14,9 +14,9 @@ export default function TechStack() {
 
       <div className="relative max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="tag mb-4 inline-block">Our Stack</span>
+          <span className="tag mb-4 inline-block">Our Technology Stack</span>
           <h2 className="section-title mb-4">
-            Built with <span className="gradient-text">Cutting-Edge</span><br />Technologies
+            Built with <span className="gradient-text">Technology That Powers </span><br />Performance
           </h2>
           <p className="text-lg max-w-2xl mx-auto" style={{ color: 'var(--muted)' }}>
             We leverage the latest, most powerful technologies to build robust, scalable, and future-proof digital solutions.

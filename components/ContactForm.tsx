@@ -148,7 +148,7 @@ export default function ContactForm() {
 
         <p className="text-center text-xs" style={{ color: 'var(--muted)' }}>
           Or call us directly at{' '}
-          <a href="tel:9910963978" className="transition-colors" style={{ color: 'var(--accent)' }}>+91 9910963978</a>
+          <a href="tel:7428703447" className="transition-colors" style={{ color: 'var(--accent)' }}>+91 7428703447</a>
         </p>
       </form>
     </div>

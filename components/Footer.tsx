@@ -57,7 +57,7 @@ export default function Footer() {
               </li>
               <li className="flex gap-3 items-center">
                 <Phone size={15} className="shrink-0" style={{ color: 'var(--accent)' }} />
-                <a href="tel:9910963978" className="text-sm hover:opacity-80" style={{ color: 'var(--muted)' }}>+91 9910963978</a>
+                <a href="tel:7428703447" className="text-sm hover:opacity-80" style={{ color: 'var(--muted)' }}>+91 7428703447</a>
               </li>
               <li className="flex gap-3 items-center">
                 <Mail size={15} className="shrink-0" style={{ color: 'var(--accent)' }} />

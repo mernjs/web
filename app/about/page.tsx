@@ -8,18 +8,18 @@ export const metadata: Metadata = {
 };
 
 const team = [
-  { name: 'Aryan Singh',   role: 'Founder & CEO',      expertise: 'Product Strategy & Business Development' },
-  { name: 'Priya Sharma',  role: 'CTO',                 expertise: 'Full-Stack Architecture & Engineering' },
-  { name: 'Rahul Kumar',   role: 'Lead Designer',       expertise: 'UI/UX Design & Brand Identity' },
-  { name: 'Neha Gupta',    role: 'Head of Marketing',   expertise: 'Digital Marketing & Growth Strategy' },
-  { name: 'Vikash Yadav',  role: 'Senior Developer',    expertise: 'React & Next.js Specialist' },
-  { name: 'Ananya Patel',  role: 'Mobile Lead',         expertise: 'Flutter & React Native Developer' },
+  { name: 'Rohit Singh',   role: 'Founder & CEO',      expertise: 'Product Strategy & Business Development' },
+  { name: 'Satya Vrat',  role: 'COO',    expertise: 'React & Next.js Specialist' },
+  { name: 'Brijesh Sonkar',  role: 'CTO',                 expertise: 'Full-Stack Architecture & Engineering' },
+  { name: 'Sonu Tiwari',   role: 'Lead Designer',       expertise: 'UI/UX Design & Brand Identity' },
+  { name: 'Atul Singh',    role: 'Head of Marketing',   expertise: 'Digital Marketing & Growth Strategy' },
+  { name: 'Raj Gaurav',  role: 'Mobile Lead',         expertise: 'Flutter & React Native Developer' },
 ];
 
 const values = [
-  { icon: Target, title: 'Excellence First',        desc: 'We set the bar high and consistently deliver beyond expectations. Mediocrity has no place in our vocabulary.' },
-  { icon: Eye,    title: 'Radical Transparency',    desc: 'Honest communication at every step. You always know where your project stands — no surprises, ever.' },
-  { icon: Heart,  title: 'Client Success',          desc: "Your success is our success. We invest in understanding your business deeply and delivering real results." },
+  { icon: Target, title: 'Our Vision',        desc: 'As a website development company in Noida, we want to set the global standard for technical integrity in the digital landscape. We envision a future where digital infrastructures become an asset for businesses, unlocking their growth. We use advanced engineering and intuitive designs to make this possible.' },
+  { icon: Eye,    title: 'Our Mission',    desc: 'Our aim is to provide the digital backbone for the leaders of tomorrow. Using the best technical frameworks, we build world-class solutions that propel your business ahead. With a decade of experience and in-depth technical expertise, we provide scalable web and mobile solutions that are fast and secure.' },
+  { icon: Heart,  title: 'Our Principles That Guide Execution',          desc: "Execution is grounded in accountability, precision, and consistency. Every project is handled through an internal production environment to maintain quality control and timely delivery. As a reliable company offering custom software development India, our focus remains on delivering solutions that strengthen identity, improve communication, and support market positioning." },
 ];
 
 export default function AboutPage() {
@@ -28,10 +28,11 @@ export default function AboutPage() {
       <section className="relative pt-36 pb-20 overflow-hidden grid-bg" style={{ background: 'var(--bg)' }}>
         <div className="absolute top-1/3 right-1/3 w-96 h-96 rounded-full blur-[120px] pointer-events-none" style={{ background: 'rgba(79,110,247,0.08)' }} />
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <span className="tag mb-6 inline-block">About Us</span>
-          <h1 className="section-title mb-6">Building Digital<br /><span className="gradient-text">Futures</span> Since 2019</h1>
+          <span className="tag mb-6 inline-block">Sauranium Technologies: Engineering Scalable Solutions for the Modern Digital Landscape</span>
+          <h1 className="section-title mb-6">Digital Platforms Designed for Scale, 
+<br /><span className="gradient-text">Speed, and Market Leadership</span></h1>
           <p className="text-xl max-w-3xl mx-auto" style={{ color: 'var(--muted)' }}>
-            Sauranium Technologies was founded with a singular mission: to help businesses harness the full power of technology. Based in Greater Noida, we've grown from a small team into a full-service digital powerhouse.
+           In a world where your digital footprint determines your positioning in the market, Sauranium Technologies brings your dreams to life by creating platforms that reflect your innovative approach to the world. 
           </p>
         </div>
       </section>
@@ -41,16 +42,16 @@ export default function AboutPage() {
           <div>
             <span className="tag mb-4 inline-block">Our Story</span>
             <h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ fontFamily: 'Syne, sans-serif', color: 'var(--text)' }}>
-              From a Small Studio to a <span className="gradient-text">Full-Service Tech Company</span>
+              About Sauranium Technologies: <span className="gradient-text">Building Precise Digital Frameworks for Modern Enterprises</span>
             </h2>
             <div className="space-y-4 leading-relaxed" style={{ color: 'var(--muted)' }}>
-              <p>Sauranium Technologies was born out of a simple observation: too many great businesses were failing online because they couldn't find a technology partner they could truly trust. We set out to change that.</p>
-              <p>Starting with just 3 developers and a bold vision in 2019, we've grown into a team of 15+ experts spanning development, design, marketing, and strategy. Our headquarters in Greater Noida serves clients across India and beyond.</p>
-              <p>Today, we've delivered 150+ successful projects — from local business websites to enterprise-scale platforms. But our biggest pride isn't the numbers — it's the lasting partnerships we've built with our clients.</p>
+              <p><b>Sauranium Technologies</b> is a <b>full stack development company India</b> that was founded with the goal of offering web design, development, app development, CRM development, digital marketing, and other digital systems engineered for business performance, brand integrity, and technical reliability. By integrating strong development methodologies with simple interfaces, we create digital assets that will provide real, measurable results for your business.</p>
+              {/* <p>Starting with just 3 developers and a bold vision in 2019, we've grown into a team of 15+ experts spanning development, design, marketing, and strategy. Our headquarters in Greater Noida serves clients across India and beyond.</p>
+              <p>Today, we've delivered 150+ successful projects — from local business websites to enterprise-scale platforms. But our biggest pride isn't the numbers — it's the lasting partnerships we've built with our clients.</p> */}
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            {[['2019','Founded'],['150+','Projects Done'],['15+','Team Members'],['80+','Happy Clients']].map(([value, label]) => (
+            {[['10+','Years Experience'],['150+','Projects Delivered'],['15+','Expert Developers'],['80+','Happy Clients']].map(([value, label]) => (
               <div key={label} className="rounded-2xl p-6 text-center card-hover" style={{ background: 'var(--card-bg)', border: '1px solid var(--border)' }}>
                 <div className="gradient-text text-4xl font-black mb-2" style={{ fontFamily: 'Syne, sans-serif' }}>{value}</div>
                 <p className="text-sm" style={{ color: 'var(--muted)' }}>{label}</p>

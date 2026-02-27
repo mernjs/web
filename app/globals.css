@@ -134,7 +134,14 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Syne', sans-serif; }
   border-color: var(--accent);
   color: var(--accent);
 }
-
+.text-xs
+{
+  font-size: 1rem !important;
+}
+.text-sm
+{
+  font-size: 1rem !important;
+}
 /* ─── SECTION TITLE ─── */
 .section-title {
   font-family: 'Syne', sans-serif;

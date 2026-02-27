@@ -2,12 +2,12 @@ import Link from 'next/link';
 import { Globe, Smartphone, BarChart3, Database, ShoppingCart, Megaphone, ArrowRight } from 'lucide-react';
 
 const services = [
-  { icon: Globe,       title: 'Web Design & Development', desc: 'We craft visually stunning, high-performance websites that convert visitors into customers. From landing pages to complex web applications.', tags: ['React', 'Next.js', 'Laravel', 'WordPress'], color: '#4f6ef7' },
-  { icon: Smartphone,  title: 'App Development',           desc: 'Native and cross-platform mobile applications with seamless UX, built for iOS and Android with modern frameworks.',                           tags: ['Flutter', 'React Native', 'iOS', 'Android'], color: '#7c3aed' },
-  { icon: Database,    title: 'CRM Development',           desc: 'Custom CRM systems tailored to your business workflow — automate processes, track leads, and manage customer relationships effortlessly.',    tags: ['Custom CRM', 'Automation', 'Analytics'],    color: '#06d6a0' },
-  { icon: Megaphone,   title: 'Digital Marketing',         desc: 'Data-driven digital marketing strategies — SEO, PPC, social media, and content marketing that deliver measurable ROI.',                       tags: ['SEO', 'PPC', 'Social Media', 'Content'],    color: '#f97316' },
-  { icon: ShoppingCart,title: 'E-Commerce Solutions',      desc: 'Powerful online stores with seamless shopping experiences, secure payments, and inventory management built to scale.',                         tags: ['WooCommerce', 'Shopify', 'Custom'],         color: '#ec4899' },
-  { icon: BarChart3,   title: 'Enterprise Solutions',      desc: 'Large-scale enterprise applications with robust architecture, API integrations, and high availability for mission-critical operations.',        tags: ['ERP', 'API', 'Cloud', 'Microservices'],     color: '#0ea5e9' },
+  { icon: Globe,       title: 'Web Design & Development', desc: 'From landing pages to web applications, we build solutions that help move your business ahead. Increase engagement and conversions through the high-performance, visually stunning websites we create for you. ', tags: ['React', 'Next.js', 'Laravel', 'WordPress'], color: '#4f6ef7' },
+  { icon: Smartphone,  title: 'App Development',           desc: 'We develop mobile applications (native and cross-platform) with a focus on a seamless and user-friendly experience. As your reliable mobile app development company in Noida, we develop applications using the latest frameworks for both iOS and Android. ', tags: ['Flutter', 'React Native', 'iOS', 'Android'], color: '#7c3aed' },
+  { icon: Database,    title: 'CRM Development',           desc: 'With scalable, custom-built CRM systems designed around your workflow, we optimize your processes, improve visibility, and strengthen customer relationships. Our dedicated approach makes us the best CRM development company Noida.',    tags: ['Custom CRM', 'Automation', 'Analytics'],    color: '#06d6a0' },
+  { icon: Megaphone,   title: 'Digital Marketing',         desc: 'Our digital marketing expertise includes SEO services in Noida, as well as PPC, social media, and content marketing. By relying on strategies that are performance-oriented, we seek to increase visibility and leads, thereby maximizing your ROI.',tags: ['SEO', 'PPC', 'Social Media', 'Content'],    color: '#f97316' },
+  { icon: ShoppingCart,title: 'E-Commerce Solutions',      desc: 'We also serve companies looking for eCommerce website development Noida by developing secure, scalable e-commerce platforms that deliver seamless shopping experiences. We help you scale your online business with confidence.',                         tags: ['WooCommerce', 'Shopify', 'Custom'],         color: '#ec4899' },
+  { icon: BarChart3,   title: 'API Development',      desc: 'Sauranium Technologies enables enhanced connectivity/integration, as well as faster innovation & development. We emphasize the design, development, testing, and maintenance of APIs.',        tags: ['ERP', 'API', 'Cloud', 'Microservices'],     color: '#0ea5e9' },
 ];
 
 export default function Services() {
@@ -17,12 +17,12 @@ export default function Services() {
 
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="tag mb-4 inline-block">What We Do</span>
+          <span className="tag mb-4 inline-block">Our Core Expertise</span>
           <h2 className="section-title mb-4">
-            Services That <span className="gradient-text">Accelerate</span><br />Your Business
+            Growth-Oriented <span className="gradient-text">Services </span><br />for Today’s Businesses
           </h2>
           <p className="text-lg max-w-2xl mx-auto" style={{ color: 'var(--muted)' }}>
-            End-to-end digital solutions designed to transform your ideas into powerful, scalable products.
+            <b>Full-service digital solutions</b> designed to help bring your vision to life as <b>scalable and future-proof products</b>.
           </p>
         </div>
 

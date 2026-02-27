@@ -17,18 +17,19 @@ export default function CTA() {
             </div>
 
             <h2 className="section-title mb-4">
-              Ready to Build<br /><span className="gradient-text">Something Extraordinary?</span>
+              Ready to Strengthen  <br /><span className="gradient-text">Your Digital Ecosystem?</span>
             </h2>
             <p className="text-lg mb-10 max-w-xl mx-auto" style={{ color: 'var(--muted)' }}>
-              Let's turn your vision into a world-class digital product. Contact us today for a free consultation and project estimate.
+              Partner with our web development company Noida and get high-performance digital solutions that take you to newer heights of success.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact" className="btn-primary flex items-center justify-center gap-2 text-base">
-                Get Free Consultation <ArrowRight size={18} />
+                Get in touch with us today for a free consultation!
+ {/* <ArrowRight size={18} /> */}
               </Link>
-              <a href="tel:9910963978" className="btn-outline flex items-center justify-center gap-2 text-base">
-                Call Us: +91 9910963978
+              <a href="tel:7428703447" className="btn-outline flex items-center justify-center gap-2 text-base">
+                Call Us: +91 7428703447
               </a>
             </div>
           </div>

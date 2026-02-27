@@ -1,10 +1,10 @@
 const steps = [
-  { number: '01', title: 'Discovery & Planning',   desc: 'We deep-dive into your business goals, target audience, and technical requirements to create a comprehensive project roadmap.' },
-  { number: '02', title: 'Design & Prototyping',   desc: 'Our designers craft pixel-perfect UI/UX designs and interactive prototypes, ensuring your vision comes to life before development begins.' },
-  { number: '03', title: 'Development & Build',    desc: 'Our engineers write clean, scalable code following best practices and modern architecture patterns for maximum performance.' },
-  { number: '04', title: 'Testing & QA',           desc: 'Rigorous quality assurance testing across devices, browsers, and scenarios ensures a flawless, bug-free product delivery.' },
-  { number: '05', title: 'Launch & Deploy',        desc: 'Smooth deployment with zero-downtime strategies, performance optimization, and SEO setup for a powerful go-live experience.' },
-  { number: '06', title: 'Support & Scale',        desc: 'Post-launch support, performance monitoring, and continuous improvements to help your product grow with your business.' },
+  { number: '01', title: 'Discovery & Planning',   desc: 'Any initiative can only be successful when the goals and requirements are clear. That is why our team sits with you to understand your business objectives and technical benchmarks. This allows us to create an effective roadmap for success.' },
+  { number: '02', title: 'Design & Prototyping',   desc: 'Next, our designers work on creating outstanding designs and interactive prototypes. Our goal is to bring the concept from your vision to reality so that we are on the same page before the development even begins.' },
+  { number: '03', title: 'Development & Build',    desc: 'The seasoned engineers at our web development company Noida write clean and scalable code to create modern architectural patterns. Thanks to our ability to follow best practices, we build the foundation of maximized performance.' },
+  { number: '04', title: 'Testing & QA',           desc: 'We have a dedicated testing and QA team that conducts rigorous quality assurance testing on various devices, scenarios, and browsers. This is crucial for flawless, high-performance, and bug-free products.' },
+  { number: '05', title: 'Launch & Deploy',        desc: 'Our unique strategy as a custom software development India ensures smooth deployment with zero downtime while also focusing on performance optimization and SEO setup. So, when you go live, it will happen in a hassle-free manner.' },
+  { number: '06', title: 'Support & Scale',        desc: 'We don’t stop serving you after the launch and deployment; we offer continuous post-launch support. This is available in the form of performance monitoring and continuous improvements, so your product’s growth shadows your business growth.' },
 ];
 
 export default function Process() {
@@ -14,12 +14,13 @@ export default function Process() {
 
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="tag mb-4 inline-block">How We Work</span>
+          <span className="tag mb-4 inline-block">How We Deliver Excellence</span>
           <h2 className="section-title mb-4">
-            Our <span className="gradient-text">Proven Process</span><br />for Delivery
+           From Strategy to 
+  			<span className="gradient-text"> Scalable Delivery,</span><br /> How We Make It Happen
           </h2>
           <p className="text-lg max-w-2xl mx-auto" style={{ color: 'var(--muted)' }}>
-            A transparent, structured approach that ensures your project is delivered on time, within budget, and beyond expectations.
+            We don't just plan; we execute. Our approach is designed to cut costs and accelerate timelines, so you experience tangible results without workflow headaches.
           </p>
         </div>
 

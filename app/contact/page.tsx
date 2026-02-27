@@ -33,7 +33,7 @@ export default function ContactPage() {
             <div className="space-y-4">
               {[
                 { icon: MapPin, label: 'Office Address', value: 'ASR Residency 1, Greater Noida\nGautam Budh Nagar, Uttar Pradesh', color: '#4f6ef7' },
-                { icon: Phone,  label: 'Phone',          value: '+91 9910963978',  href: 'tel:9910963978',           color: '#7c3aed' },
+                { icon: Phone,  label: 'Phone',          value: '+91 7428703447',  href: 'tel:7428703447',           color: '#7c3aed' },
                 { icon: Mail,   label: 'Email',          value: 'info@sauranium.com', href: 'mailto:info@sauranium.com', color: '#06d6a0' },
                 { icon: Clock,  label: 'Working Hours',  value: 'Monday – Saturday\n9:00 AM – 7:00 PM IST',         color: '#f97316' },
               ].map(({ icon: Icon, label, value, href, color }) => (

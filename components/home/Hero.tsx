@@ -15,26 +15,26 @@ export default function Hero() {
           style={{ background: 'rgba(79,110,247,0.08)', border: '1px solid rgba(79,110,247,0.2)' }}
         >
           <span className="w-2 h-2 rounded-full animate-pulse" style={{ background: 'var(--highlight)' }} />
-          <span className="text-sm font-medium" style={{ color: 'var(--accent)' }}>Greater Noida's Premier Tech Company</span>
+          <span className="text-sm font-medium" style={{ color: 'var(--accent)' }}>Powering Digital Growth in Noida and Beyond</span>
         </div>
 
         <h1 className="section-title mb-6 max-w-5xl mx-auto">
-          We Build{' '}
-          <span className="gradient-text">Digital Products</span>
-          {' '}That<br className="hidden md:block" />
-          Drive Real Business Growth
+          We Create Brilliant{' '}
+          <span className="gradient-text"> Digital Solutions</span>
+          {' '}<br className="hidden md:block" />
+          That Catalyze Business Growth
         </h1>
 
         <p className="text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed" style={{ color: 'var(--muted)' }}>
-          From stunning websites to powerful apps and CRM systems — Sauranium Technologies delivers end-to-end digital solutions crafted for scale and performance.
+          From custom websites to mobile apps and enterprise-grade software to eCommerce platforms, we design and develop technology that can evolve with your business. As the best <b>full stack development company in India</b>, <b>Sauranium Technologies</b> uses strategy, design, and advanced technology to develop powerful digital solutions for your business.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
           <Link href="/contact" className="btn-primary flex items-center justify-center gap-2 text-base">
-            Start Your Project <ArrowRight size={18} />
+            Start Your Project Today! 
           </Link>
           <Link href="/services" className="btn-outline flex items-center justify-center gap-2 text-base">
-            Explore Services
+            Explore Our Services!
           </Link>
         </div>
 
