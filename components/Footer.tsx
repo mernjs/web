@@ -1,6 +1,41 @@
 import Link from 'next/link';
-import { MapPin, Phone, Mail, Twitter, Linkedin, Github, Instagram } from 'lucide-react';
+import { MapPin, Phone, Mail, Linkedin, Facebook, Instagram } from 'lucide-react';
 
+
+const fotterLink = [
+  {
+    label: "Web & App Development",
+    link: "/service-detail",
+  },
+  {
+    label: "CRM Development",
+    link: "/crm-development",
+  },
+  {
+    label: "Digital Marketing",
+    link: "/digital-marketing",
+  },
+  {
+    label: "E-Commerce Solutions",
+    link: "/e-commerce-solution",
+  },
+];
+
+const socialLinks = [
+  
+  {
+    icon: Linkedin,
+    url: "https://www.linkedin.com/company/sauranium-technologies-pvt-ltd/",
+  },
+  {
+    icon: Facebook,
+    url: "https://www.facebook.com/Sauraniumtechnologiespvtltd",
+  },
+  {
+    icon: Instagram,
+    url: "https://www.instagram.com/sauraniumtechnologies/",
+  },
+];
 export default function Footer() {
   return (
     <footer className="pt-16 pb-8" style={{ background: 'var(--bg3)', borderTop: '1px solid var(--border)' }}>
@@ -21,20 +56,37 @@ export default function Footer() {
               Building world-class digital products for forward-thinking businesses. From concept to deployment — we deliver excellence.
             </p>
             <div className="flex gap-3">
-              {[Twitter, Linkedin, Github, Instagram].map((Icon, i) => (
-                <a key={i} href="#" className="w-9 h-9 rounded-lg flex items-center justify-center transition-all hover:opacity-80"
-                  style={{ background: 'var(--bg2)', border: '1px solid var(--border)' }}>
-                  <Icon size={15} style={{ color: 'var(--muted)' }} />
-                </a>
-              ))}
-            </div>
+				{socialLinks.map((social, i) => {
+					const Icon = social.icon;
+					return (
+					<a
+						key={i}
+						href={social.url}
+						target="_blank"
+						rel="noopener noreferrer"
+						className="w-9 h-9 rounded-lg flex items-center justify-center transition-all hover:opacity-80 hover:scale-105"
+						style={{ background: 'var(--bg2)', border: '1px solid var(--border)' }}
+					>
+						<Icon size={15} style={{ color: 'var(--muted)' }} />
+					</a>
+					);
+				})}
+			</div>
           </div>
 
           <div>
             <h4 className="font-semibold mb-4" style={{ fontFamily: 'Syne, sans-serif', color: 'var(--text)' }}>Services</h4>
             <ul className="space-y-2">
-              {['Web Design & Development','App Development','CRM Development','Digital Marketing','E-Commerce Solutions','API Development'].map(s => (
-                <li key={s}><Link href="/services" className="text-sm hover:opacity-80 transition-opacity" style={{ color: 'var(--muted)' }}>{s}</Link></li>
+              {fotterLink.map((s) => (
+                <li key={s.label}>
+                  <Link
+                    href={s.link}
+                    className="text-sm hover:opacity-80 transition-opacity"
+                    style={{ color: "var(--muted)" }}
+                  >
+                    {s.label}
+                  </Link>
+                </li>
               ))}
             </ul>
           </div>
@@ -69,7 +121,7 @@ export default function Footer() {
 
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4" style={{ borderTop: '1px solid var(--border)' }}>
           <p className="text-sm" style={{ color: 'var(--muted)' }}>© 2025 Sauranium Technologies Pvt. Ltd. All rights reserved.</p>
-          <p className="text-sm" style={{ color: 'var(--muted)' }}>Crafted with precision in Greater Noida, India</p>
+          <p className="text-sm" style={{ color: 'var(--muted)' }}>Crafted with precision in Noida, India</p>
         </div>
       </div>
     </footer>

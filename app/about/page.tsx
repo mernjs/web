@@ -3,13 +3,13 @@ import Link from 'next/link';
 import { ArrowRight, Target, Eye, Heart } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'About Us | Sauranium Technologies',
-  description: 'Learn about Sauranium Technologies — our story, mission, values and the expert team.',
+  title: 'About Sauranium Technologies: Leading Software Development Company in India ',
+  description: 'Discover Sauranium Technologies, a trusted software development company in India specializing in delivering scalable web, mobile, and enterprise solutions.',
 };
 
 const team = [
   { name: 'Rohit Singh',   role: 'Founder & CEO',      expertise: 'Product Strategy & Business Development' },
-  { name: 'Satya Vrat',  role: 'COO',    expertise: 'React & Next.js Specialist' },
+  { name: 'Satya Vrat',  role: 'COO',    expertise: 'Technology Leader' },
   { name: 'Brijesh Sonkar',  role: 'CTO',                 expertise: 'Full-Stack Architecture & Engineering' },
   { name: 'Sonu Tiwari',   role: 'Lead Designer',       expertise: 'UI/UX Design & Brand Identity' },
   { name: 'Atul Singh',    role: 'Head of Marketing',   expertise: 'Digital Marketing & Growth Strategy' },
@@ -102,10 +102,23 @@ export default function AboutPage() {
 
       <section className="py-16 max-w-4xl mx-auto px-6 text-center">
         <h2 className="section-title mb-4">Let's Build Together</h2>
-        <p className="mb-8 text-lg" style={{ color: 'var(--muted)' }}>Whether you're a startup or an enterprise, we'd love to help you build something extraordinary.</p>
+        <p className="mb-8 text-lg" style={{ color: "var(--muted)" }}>
+          Whether you're a startup or an enterprise, we'd love to help you build
+          something extraordinary.
+        </p>
         <div className="flex gap-4 justify-center flex-wrap">
-          <Link href="/contact" className="btn-primary inline-flex items-center gap-2">Get in Touch <ArrowRight size={16} /></Link>
-          <Link href="/services" className="btn-outline inline-flex items-center gap-2">View Services</Link>
+          <Link
+            href="/contact"
+            className="btn-primary !flex w-max  items-center gap-2"
+          >
+            Get in Touch <ArrowRight size={16} />
+          </Link>
+          <Link
+            href="/services"
+            className="btn-outline inline-flex items-center gap-2"
+          >
+            View Services
+          </Link>
         </div>
       </section>
     </>

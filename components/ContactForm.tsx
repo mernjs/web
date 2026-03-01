@@ -34,8 +34,8 @@ export default function ContactForm() {
 
   return (
     <div className="rounded-3xl p-8" style={{ background: 'var(--card-bg)', border: '1px solid var(--border)' }}>
-      <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: 'Syne, sans-serif', color: 'var(--text)' }}>Send Us a Message</h3>
-      <p className="text-sm mb-8" style={{ color: 'var(--muted)' }}>Fill in the details below and we'll get back to you within 24 hours.</p>
+      <h3 className="text-2xl font-bold mb-2" style={{ fontFamily: 'Syne, sans-serif', color: 'var(--text)' }}>Submit Your Enquiry</h3>
+      <p className="text-sm mb-8" style={{ color: 'var(--muted)' }}>Fill out the form below, and we’ll respond promptly within 24 hours.</p>
 
       {status === 'success' && (
         <div className="flex items-center gap-3 rounded-xl p-4 mb-6" style={{ background: 'rgba(6,214,160,0.08)', border: '1px solid rgba(6,214,160,0.2)' }}>
@@ -70,7 +70,7 @@ export default function ContactForm() {
             <label className="block text-sm mb-2" style={{ color: 'var(--text2)' }}>Phone Number *</label>
             <input
               {...register('phone')}
-              placeholder="+91 98765 43210"
+              placeholder="Phone Number"
               type="tel"
               className="w-full rounded-xl px-4 py-3 text-sm outline-none transition-colors"
               style={{
@@ -142,12 +142,14 @@ export default function ContactForm() {
           {status === 'submitting' ? (
             <><div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />Sending...</>
           ) : (
-            <><Send size={16} /> Send Message</>
+            <span className="flex justify-center items-center gap-x-4">
+              <Send size={16} /> Send Message
+            </span>
           )}
         </button>
 
         <p className="text-center text-xs" style={{ color: 'var(--muted)' }}>
-          Or call us directly at{' '}
+          Prefer a direct conversation? We’re available at{' '}
           <a href="tel:7428703447" className="transition-colors" style={{ color: 'var(--accent)' }}>+91 7428703447</a>
         </p>
       </form>

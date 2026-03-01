@@ -24,12 +24,12 @@ export default function CTA() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="btn-primary flex items-center justify-center gap-2 text-base">
-                Get in touch with us today for a free consultation!
- {/* <ArrowRight size={18} /> */}
+              <Link href="/contact" className="btn-primary !flex items-center justify-center gap-2 text-base">
+                Get Quote
+ <ArrowRight size={18} />
               </Link>
               <a href="tel:7428703447" className="btn-outline flex items-center justify-center gap-2 text-base">
-                Call Us: +91 7428703447
+                Call Us
               </a>
             </div>
           </div>

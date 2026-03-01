@@ -103,7 +103,7 @@ export default function TechnologiesPage() {
         <div className="rounded-3xl p-12" style={{ background: 'var(--card-bg)', border: '1px solid rgba(79,110,247,0.2)' }}>
           <h2 className="section-title mb-4">Not sure which technology fits your project?</h2>
           <p className="mb-8" style={{ color: 'var(--muted)' }}>Our architects will help you choose the perfect tech stack for your goals and budget.</p>
-          <Link href="/contact" className="btn-primary inline-flex items-center gap-2">Talk to Our Experts <ArrowRight size={16} /></Link>
+          <Link href="/contact" className="btn-primary !flex w-max mx-auto items-center gap-2 text-base">Talk to Our Experts <ArrowRight size={16} /></Link>
         </div>
       </section>
     </>

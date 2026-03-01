@@ -14,9 +14,9 @@ export default function ContactPage() {
         <div className="absolute top-1/3 left-1/3 w-96 h-96 rounded-full blur-[120px] pointer-events-none" style={{ background: 'rgba(79,110,247,0.08)' }} />
         <div className="max-w-7xl mx-auto px-6 text-center">
           <span className="tag mb-6 inline-block">Contact Us</span>
-          <h1 className="section-title mb-6">Let's Start Building<br /><span className="gradient-text">Your Next Big Thing</span></h1>
+          <h1 className="section-title mb-6">Start Your Next Digital <br /><span className="gradient-text">Breakthrough Today</span></h1>
           <p className="text-xl max-w-2xl mx-auto" style={{ color: 'var(--muted)' }}>
-            Have a project in mind? Send us a message and we'll get back to you within 24 hours.
+            Planning your next digital move? Sauranium Technologies is here to help you! 
           </p>
         </div>
       </section>
@@ -25,9 +25,9 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
           <div className="lg:col-span-2 space-y-6">
             <div>
-              <h2 className="text-2xl font-bold mb-3" style={{ fontFamily: 'Syne, sans-serif', color: 'var(--text)' }}>Get in Touch</h2>
+              <h2 className="text-2xl font-bold mb-3" style={{ fontFamily: 'Syne, sans-serif', color: 'var(--text)' }}>Let’s Discuss Your Vision</h2>
               <p className="leading-relaxed" style={{ color: 'var(--muted)' }}>
-                Whether you need a quick consultation, a project estimate, or just want to say hello — we're always happy to connect.
+                Call us, visit us, or write an email to us; here are all the details you need: 
               </p>
             </div>
             <div className="space-y-4">

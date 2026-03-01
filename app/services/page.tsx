@@ -48,7 +48,7 @@ export default function ServicesPage() {
                     <span key={t} className="px-3 py-1 text-xs rounded-full" style={{ background: 'var(--bg3)', border: '1px solid var(--border)', color: 'var(--text2)' }}>{t}</span>
                   ))}
                 </div>
-                <Link href="/contact" className="btn-primary inline-flex items-center gap-2 text-sm">Get Started <ArrowRight size={15} /></Link>
+                <Link href="/contact" className="btn-primary !flex w-max items-center gap-2 text-sm">Get Started <ArrowRight size={15} /></Link>
               </div>
               <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {features.map(f => (
@@ -68,7 +68,7 @@ export default function ServicesPage() {
       <section className="py-16 max-w-4xl mx-auto px-6 text-center">
         <h2 className="section-title mb-4">Have a Project in Mind?</h2>
         <p className="mb-8 text-lg" style={{ color: 'var(--muted)' }}>Let's discuss your requirements and build something amazing together.</p>
-        <Link href="/contact" className="btn-primary inline-flex items-center gap-2 text-base">Start Free Consultation <ArrowRight size={18} /></Link>
+        <Link href="/contact" className="btn-primary !flex w-max mx-auto items-center gap-2 text-base">Start Free Consultation <ArrowRight size={18} /></Link>
       </section>
     </>
   );

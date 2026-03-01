@@ -30,7 +30,7 @@ export default function Hero() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-          <Link href="/contact" className="btn-primary flex items-center justify-center gap-2 text-base">
+          <Link href="/contact" className="btn-primary !flex items-center justify-center gap-2 text-base">
             Start Your Project Today! 
           </Link>
           <Link href="/services" className="btn-outline flex items-center justify-center gap-2 text-base">

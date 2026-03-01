@@ -53,7 +53,7 @@ export default function Services() {
         </div>
 
         <div className="text-center mt-12">
-          <Link href="/services" className="btn-outline inline-flex items-center gap-2">
+          <Link href="/services" className="btn-outline !flex w-max mx-auto items-center gap-2">
             View All Services <ArrowRight size={16} />
           </Link>
         </div>

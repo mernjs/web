@@ -5,8 +5,8 @@ import Footer from '@/components/Footer';
 import ThemeProvider from '@/components/ThemeProvider';
 
 export const metadata: Metadata = {
-  title: 'Sauranium Technologies Pvt. Ltd. | Web & App Development Company',
-  description: 'Sauranium Technologies is a premier web design, development & digital marketing company in Greater Noida.',
+  title: 'Sauranium Technologies: Your Trusted Full Stack Development Company in India',
+  description: 'Partner with Sauranium Technologies for secure, high-performance digital platforms, APIs, and custom software solutions. We are the best full stack development company in India.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
